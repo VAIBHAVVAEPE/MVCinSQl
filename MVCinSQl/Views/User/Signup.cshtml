@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Signup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sign Up</h2>
+<div class="container">
+    @{ Html.BeginForm();}
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("FullName")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("FullName")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Email_Id")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("EmailId")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Password")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("Password")
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="SignUp" />
+    </div>
+    <div class="row">
+        <p>Already Have an Account?'</p>@Html.ActionLink("Click Here", "SignIn")
+    </div>
+
+</div>
+

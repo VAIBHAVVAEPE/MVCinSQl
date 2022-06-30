@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Invalid";
+}
+
+<h1>Inval id</h1>
+@if(null != TempData["alertMessage"])
+   {
+<script type="text/javascript">
+       alert('Invalid Email or Password');
+</script>
+   }
